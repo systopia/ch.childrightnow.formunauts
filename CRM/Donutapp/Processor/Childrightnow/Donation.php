@@ -201,11 +201,11 @@ class CRM_Donutapp_Processor_Childrightnow_Donation extends CRM_Donutapp_Process
 
     // add fundraiser fields
     $fundraiser_fields = [
-        'location'            => 'custom_28', // todo: key not confirmed
-        'fundraiser_name'     => 'custom_31',
-        'createtime'          => 'custom_29',
-        'person_id'           => 'custom_36',
-        'uid'                 => 'custom_37',
+        'location'            => 'custom_4',
+        'fundraiser_name'     => 'custom_7',
+        'createtime'          => 'custom_5',
+        'person_id'           => 'custom_9', // "formularnummer"
+        'uid'                 => 'custom_8',
     ];
     foreach ($fundraiser_fields as $submission_field => $civicrm_field) {
       $value = $donation->$submission_field;
