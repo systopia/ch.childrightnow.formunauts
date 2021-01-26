@@ -55,7 +55,7 @@ abstract class CRM_Donutapp_Processor_Childrightnow_Base extends CRM_Donutapp_Pr
             'label'           => "RaiseTogether Werbung",
             'is_active'       => 1,
         ]);
-        $recruitment_activity_id = civicrm_api3('OptionValue', 'getvalue', [
+        $recruitment_activity_id = (int) civicrm_api3('OptionValue', 'getvalue', [
             'option_group_id' => 'activity_type',
             'name'            => 'donutapp_recruitment',
             'return'          => 'value'
@@ -92,7 +92,7 @@ abstract class CRM_Donutapp_Processor_Childrightnow_Base extends CRM_Donutapp_Pr
             'label'           => "RaiseTogether Importfehler",
             'is_active'       => 1,
         ]);
-        $import_error_activity_type_id = civicrm_api3('OptionValue', 'getvalue', [
+        $import_error_activity_type_id = (int) civicrm_api3('OptionValue', 'getvalue', [
             'option_group_id' => 'activity_type',
             'name'            => 'donutapp_importerror',
             'return'          => 'value'
