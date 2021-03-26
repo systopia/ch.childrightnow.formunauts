@@ -293,7 +293,7 @@ class CRM_Donutapp_Processor_Childrightnow_Donation extends CRM_Donutapp_Process
     // derive creditor
     switch ($donation->payment_method) {
       case 'postfinance_iban':
-        $mandate_data['creditor_id'] = 2;
+        $mandate_data['creditor_id'] = 4;
         $mandate_data['status'] = 'INIT';
         break;
 
